@@ -1,0 +1,23 @@
+$lexend: 'Lexend';
+
+h1, h2, h3, h4, h5, h6 {
+  color: $headline;
+  font-family: $lexend;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
