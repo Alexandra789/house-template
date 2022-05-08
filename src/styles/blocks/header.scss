@@ -1,0 +1,246 @@
+.header {
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0) 0%, #43ccbfb8 0%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0) 100%);
+  position: relative;
+
+  &__background-img {
+    width: 720px;
+    height: 720px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+  }
+
+  &__inner {
+    padding-top: 40px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    margin-bottom: 32px;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 96px;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      max-width: 115px;
+      width: 100%;
+
+      svg {
+        width: 36px;
+        height: 36px;
+        margin-right: 12px;
+      }
+
+      &__title {
+        max-width: 67px;
+        width: 100%;
+      }
+    }
+
+    .navigation {
+      display: flex;
+      align-items: center;
+      margin-right: 56px;
+      margin-left: auto;
+
+      &__item {
+        margin-right: 24px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      &__link {
+        color: $neutral100;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: 0;
+        text-align: left;
+        padding: 8px 16px;
+        border-radius: 32px;
+        border: 1px solid $white;
+        display: flex;
+
+        svg {
+          margin-left: 10px;
+
+          path {
+            transition: 0.2s
+          }
+        }
+      }
+    }
+
+    .sing-up-button {
+      color: $greenText;
+      background: $greenBackground;
+      padding: 12px 24px;
+      max-width: 108px;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    display: flex;
+
+    &-left {
+      max-width: 496px;
+      width: 100%;
+
+      .title {
+        max-width: 455px;
+      }
+
+      .search-form {
+        display: flex;
+        padding-left: 24px;
+        align-items: center;
+        margin-bottom: 32px;
+
+        .location-svg {
+          width: 24px;
+          height: 24px;
+        }
+
+        &__input {
+          max-width: 303px;
+          width: 100%;
+          margin-right: 16px;
+          margin-left: 16px;
+          height: 22px;
+          padding: 0;
+        }
+
+        &__button {
+          margin: 4px 4px 4px auto;
+          max-width: 109px;
+          width: 100%;
+
+          svg {
+            margin-left: 4px;
+          }
+        }
+      }
+
+      .our-partnership {
+        &__title {
+          font-weight: 400;
+          color: $neutral500;
+        }
+
+        &__logos {
+          display: flex;
+
+          img {
+            max-width: 82px;
+            width: 100%;
+            margin-right: 32px;
+
+            &:last-of-type {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+
+    &-right {
+      margin-left: auto;
+      margin-top: auto;
+    }
+  }
+
+  &__slider {
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 672px;
+
+    .slider__title {
+      margin-bottom: 2px;
+    }
+
+    .swiper-slide {
+      padding: 24px;
+      background: $white;
+      box-shadow: 0 11px 48px rgba(51, 51, 51, 0.06);
+      border-radius: 32px;
+      display: flex;
+      width: auto !important;
+      align-items: center;
+      cursor: grab;
+
+      &:nth-child(3) {
+        .img-wrapper {
+          width: 56px;
+          height: 56px;
+
+          img:first-child {
+            right: 0;
+            left: -29px;
+          }
+        }
+
+        .text-wrapper {
+          max-width: 183px;
+        }
+      }
+
+      .house-img {
+        width: 56px;
+        height: 56px;
+      }
+
+      .img-wrapper {
+        width: 112px;
+        height: 56px;
+        display: flex;
+        position: relative;
+
+        img {
+          top: -20px;
+          position: absolute;
+
+          &:first-child {
+            right: 30px;
+          }
+
+          &:nth-child(2) {
+            right: 2px;
+          }
+
+          &:last-child {
+            left: 25px;
+          }
+        }
+      }
+
+      .text-wrapper {
+        max-width: 152px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        color: $subheadline;
+        margin-left: 16px;
+      }
+
+      img {
+        width: 115px;
+        height: 115px;
+      }
+    }
+  }
+}
