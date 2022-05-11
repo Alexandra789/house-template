@@ -1,2 +1,2 @@
-import './js/headerSlider';
+import './js/index';
 import './styles/style.scss';

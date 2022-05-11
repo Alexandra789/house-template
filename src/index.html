@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet"/>
-    <script crossorigin="anonymous" defer
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <link
             href="https://unpkg.com/swiper/swiper-bundle.min.css"
             rel="stylesheet"
@@ -33,14 +31,19 @@
                     <div class="navigation__item">
                         <a class="navigation__link" href="#">Article</a>
                     </div>
-                    <div class="navigation__item">
-                        <a class="navigation__link" href="#">Property
+                    <div class="navigation__item navigation__item-dropdown">
+                        <a class="navigation__link" href="javascript:void(0);">Property
                             <svg fill="none" height="18" viewBox="0 0 18 18" width="18"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14.6236 7.12001C14.624 6.94625 14.5631 6.77784 14.4515 6.64404C14.3887 6.56874 14.3116 6.50649 14.2245 6.46086C14.1374 6.41523 14.0421 6.38712 13.9441 6.37814C13.8461 6.36916 13.7473 6.37948 13.6533 6.40852C13.5593 6.43756 13.472 6.48474 13.3964 6.54736L9.38526 9.87916L5.36668 6.66635C5.29013 6.60458 5.20205 6.55844 5.10751 6.53061C5.01296 6.50277 4.91381 6.49377 4.81576 6.50414C4.71771 6.51451 4.62268 6.54403 4.53614 6.59101C4.44961 6.638 4.37327 6.70151 4.31151 6.77791C4.24339 6.85486 4.192 6.94497 4.16058 7.04259C4.12916 7.14021 4.11838 7.24323 4.12892 7.34519C4.13946 7.44715 4.17109 7.54584 4.22183 7.63507C4.27257 7.7243 4.34132 7.80215 4.42377 7.86372L8.91381 11.4558C9.04771 11.5652 9.21567 11.625 9.38901 11.625C9.56234 11.625 9.7303 11.5652 9.8642 11.4558L14.3542 7.73729C14.4448 7.66268 14.5164 7.56791 14.5632 7.46066C14.61 7.35341 14.6307 7.23671 14.6236 7.12001Z"
                                       fill="white"/>
                             </svg>
                         </a>
+                        <div class="dropdown property-dropdown">
+                            <a class="navigation__link" href="#">Property</a>
+                            <a class="navigation__link" href="#">Property</a>
+                            <a class="navigation__link" href="#">Property</a>
+                        </div>
                     </div>
                 </nav>
                 <button class="button sing-up-button">Sign Up!</button>
@@ -117,6 +120,175 @@
             </div>
         </div>
     </header>
+    <div class="featured-house">
+        <div class="container">
+            <div class="marker marker__recommendation">
+                <div class="marker__line"></div>
+                Our Recommendation
+            </div>
+            <div class="featured-house__header">
+                <h2 class="title featured-house__title">Featured House</h2>
+                <div class="featured-house__filters">
+                    <div class="featured-house__filters__item featured-house__filters__item-active">
+                        <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 10.8319V19.5C20.9998 19.7719 20.9262 20.0386 20.7868 20.272C20.6475 20.5054 20.4476 20.6968 20.2084 20.8259C19.9916 20.9432 19.7485 21.0031 19.5021 20.9999H14.9967C14.7978 20.9999 14.607 20.9209 14.4664 20.7803C14.3257 20.6396 14.2467 20.4488 14.2467 20.2499V15.7493C14.2467 15.5504 14.1677 15.3596 14.0271 15.2189C13.8864 15.0783 13.6956 14.9993 13.4967 14.9993H10.4967C10.2978 14.9993 10.107 15.0783 9.9664 15.2189C9.82574 15.3596 9.74673 15.5504 9.74673 15.7493V20.2499C9.74673 20.4488 9.66771 20.6396 9.52706 20.7803C9.3864 20.9209 9.19564 20.9999 8.99673 20.9999H4.5002C4.28754 21.0005 4.07723 20.9556 3.88335 20.8682C3.68948 20.7808 3.51651 20.653 3.37604 20.4934C3.12946 20.2082 2.99571 19.8427 3.00001 19.4657V10.8318C3.00017 10.6228 3.04392 10.4162 3.12846 10.225C3.21299 10.0339 3.33646 9.86251 3.49098 9.7218L10.9903 2.90308C11.2658 2.65075 11.6258 2.51078 11.9994 2.51074C12.3729 2.51071 12.733 2.65062 13.0085 2.90289L20.5091 9.72189C20.6636 9.86263 20.787 10.034 20.8716 10.2252C20.9561 10.4163 20.9998 10.6229 21 10.8319Z"
+                                  fill="#888B97"/>
+                        </svg>
+                        House
+                    </div>
+                    <div class="featured-house__filters__item">
+                        <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 20.9999H4C3.45 20.9999 3 20.5499 3 19.9999V8.68994C3 8.26994 3.25 7.89994 3.64 7.74994L14.64 3.51994C14.7921 3.46126 14.9561 3.44064 15.118 3.45986C15.2798 3.47909 15.4345 3.53758 15.5686 3.63025C15.7027 3.72292 15.8121 3.84696 15.8873 3.99156C15.9624 4.13617 16.0012 4.29696 16 4.45994V9.99994H8C7.45 9.99994 7 10.4499 7 10.9999V20.9999ZM17 11.9999H10C9.45 11.9999 9 12.4499 9 12.9999V19.9999C9 20.5499 9.45 20.9999 10 20.9999H14V16.9999C14 16.4499 14.45 15.9999 15 15.9999C15.55 15.9999 16 16.4499 16 16.9999V20.9999H20C20.55 20.9999 21 20.5499 21 19.9999V11.9999C21 10.8999 20.1 9.99994 19 9.99994C17.9 9.99994 17 10.8999 17 11.9999Z"
+                                  fill="#888B97"/>
+                        </svg>
+                        Villa
+                    </div>
+                    <div class="featured-house__filters__item">
+                        <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 11V5C17 3.9 16.1 3 15 3H9C7.9 3 7 3.9 7 5V7H5C3.9 7 3 7.9 3 9V19C3 20.1 3.9 21 5 21H11V17H13V21H19C20.1 21 21 20.1 21 19V13C21 11.9 20.1 11 19 11H17ZM7 19H5V17H7V19ZM7 15H5V13H7V15ZM7 11H5V9H7V11ZM11 15H9V13H11V15ZM11 11H9V9H11V11ZM11 7H9V5H11V7ZM15 15H13V13H15V15ZM15 11H13V9H15V11ZM15 7H13V5H15V7ZM19 19H17V17H19V19ZM19 15H17V13H19V15Z"
+                                  fill="#888B97"/>
+                        </svg>
+                        Apartment
+                    </div>
+                </div>
+            </div>
 
+
+            <div class="swiper featured-house__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="image-wrapper">
+                            <img alt="house image" src="../src/images/featured-house/house-1.png">
+                            <div class="tag popular">
+                                <svg fill="none" height="16" viewBox="0 0 16 16" width="16"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.0328 7.33118C12.7295 6.64846 12.2885 6.03568 11.7375 5.53118L11.2828 5.114C11.2674 5.10022 11.2488 5.09044 11.2287 5.08552C11.2086 5.0806 11.1876 5.0807 11.1675 5.08579C11.1475 5.09088 11.129 5.10081 11.1137 5.11472C11.0984 5.12863 11.0867 5.14609 11.0797 5.16556L10.8766 5.74837C10.75 6.114 10.5172 6.48743 10.1875 6.85462C10.1656 6.87806 10.1406 6.88431 10.1234 6.88587C10.1063 6.88743 10.0797 6.88431 10.0562 6.86243C10.0344 6.84368 10.0234 6.81556 10.025 6.78743C10.0828 5.84681 9.80156 4.78587 9.18594 3.63118C8.67656 2.67181 7.96875 1.92337 7.08437 1.4015L6.43906 1.02181C6.35469 0.971808 6.24688 1.03743 6.25156 1.13587L6.28594 1.88587C6.30937 2.39837 6.25 2.8515 6.10938 3.22806C5.9375 3.689 5.69062 4.11712 5.375 4.5015C5.15535 4.76863 4.90639 5.01024 4.63281 5.22181C3.97391 5.72832 3.43815 6.37733 3.06562 7.12025C2.69402 7.86964 2.50045 8.69471 2.5 9.53118C2.5 10.2687 2.64531 10.9827 2.93281 11.6562C3.21042 12.3046 3.61103 12.893 4.1125 13.389C4.61875 13.889 5.20625 14.2827 5.86094 14.5562C6.53906 14.8406 7.25781 14.9843 8 14.9843C8.74219 14.9843 9.46094 14.8406 10.1391 14.5577C10.7921 14.2859 11.386 13.8895 11.8875 13.3906C12.3938 12.8906 12.7906 12.3062 13.0672 11.6577C13.3543 10.9861 13.5015 10.2631 13.5 9.53274C13.5 8.77024 13.3438 8.02962 13.0328 7.33118Z"
+                                          fill="#EF4444"/>
+                                </svg>
+                                <p class="tag__text">Popular</p>
+                            </div>
+                        </div>
+                        <h3 class="title">Roselands House</h3>
+                        <div class="price">$ 35.000.000</div>
+                        <div class="owner">
+                            <img alt="owner img" src="../src/images/featured-house/person-1.png">
+                            <div class="owner__information">
+                                <p class="owner__name">Dianne Russell</p>
+                                <p class="owner__address">Manchester, Kentucky</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-wrapper">
+                            <img alt="house image" src="../src/images/featured-house/house-2.png">
+                            <div class="tag new">
+                                <svg fill="none" height="16" viewBox="0 0 16 16" width="16"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 7.22126V13C13.9999 13.1812 13.9508 13.3591 13.8579 13.5147C13.765 13.6703 13.6317 13.7979 13.4723 13.8839C13.3278 13.9622 13.1657 14.0021 13.0014 13.9999H9.99782C9.86521 13.9999 9.73803 13.9473 9.64426 13.8535C9.5505 13.7597 9.49782 13.6326 9.49782 13.4999V10.4995C9.49782 10.3669 9.44514 10.2397 9.35137 10.146C9.2576 10.0522 9.13043 9.99951 8.99782 9.99951H6.99782C6.86521 9.99951 6.73803 10.0522 6.64426 10.146C6.5505 10.2397 6.49782 10.3669 6.49782 10.4995V13.4999C6.49782 13.6326 6.44514 13.7597 6.35137 13.8535C6.2576 13.9473 6.13043 13.9999 5.99782 13.9999H3.00013C2.85836 14.0003 2.71816 13.9704 2.5889 13.9121C2.45965 13.8539 2.34434 13.7687 2.25069 13.6623C2.08631 13.4721 1.99714 13.2285 2.00001 12.9771V7.2212C2.00011 7.08187 2.02928 6.9441 2.08564 6.81669C2.142 6.68927 2.22431 6.57501 2.32732 6.4812L7.32688 1.93539C7.51053 1.76717 7.75053 1.67385 7.99957 1.67383C8.24862 1.6738 8.48864 1.76708 8.67232 1.93526L13.6728 6.48126C13.7757 6.57509 13.858 6.68935 13.9144 6.81677C13.9707 6.94418 13.9999 7.08194 14 7.22126Z"
+                                          fill="#1D4ED8"/>
+                                </svg>
+                                <p class="tag__text">New house</p>
+                            </div>
+                        </div>
+                        <h3 class="title">Woodlandside</h3>
+                        <div class="price">$ 20.000.000</div>
+                        <div class="owner">
+                            <img alt="owner img" src="../src/images/featured-house/person-2.png">
+                            <div class="owner__information">
+                                <p class="owner__name">Robert Fox</p>
+                                <p class="owner__address">Dr. San Jose, South Dakota</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-wrapper">
+                            <img alt="house image" src="../src/images/featured-house/house-3.png">
+                            <div class="tag best">
+                                <svg fill="none" height="16" viewBox="0 0 16 16" width="16"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.8 4.79999H2.79998V4.39999L11.6 3.69599V4.39999H12.8V3.19999C12.8 2.31999 12.0872 1.70239 11.2168 1.82639L3.18398 2.97359C2.31278 3.09839 1.59998 3.91999 1.59998 4.79999V12.8C1.59998 13.2243 1.76855 13.6313 2.0686 13.9314C2.36866 14.2314 2.77563 14.4 3.19998 14.4H12.8C13.2243 14.4 13.6313 14.2314 13.9313 13.9314C14.2314 13.6313 14.4 13.2243 14.4 12.8V6.39999C14.4 5.97564 14.2314 5.56868 13.9313 5.26862C13.6313 4.96856 13.2243 4.79999 12.8 4.79999ZM11.6 10.4048C11.4423 10.4047 11.2863 10.3736 11.1406 10.3133C10.995 10.2529 10.8627 10.1644 10.7513 10.0529C10.6399 9.94141 10.5515 9.80905 10.4912 9.66339C10.4309 9.51773 10.3999 9.36163 10.4 9.20399C10.4 9.04635 10.4311 8.89027 10.4915 8.74465C10.5519 8.59903 10.6403 8.46673 10.7518 8.3553C10.8634 8.24387 10.9957 8.15549 11.1414 8.09521C11.287 8.03493 11.4431 8.00394 11.6008 8.00399C11.9191 8.0041 12.2244 8.13067 12.4495 8.35586C12.6745 8.58105 12.8009 8.88642 12.8008 9.20479C12.8007 9.52315 12.6741 9.82844 12.4489 10.0535C12.2237 10.2785 11.9183 10.4049 11.6 10.4048Z"
+                                          fill="#047857"/>
+                                </svg>
+                                <p class="tag__text">Best Deals</p>
+                            </div>
+                        </div>
+                        <h3 class="title">The Old Lighthouse</h3>
+                        <div class="price">$ 44.000.000</div>
+                        <div class="owner">
+                            <img alt="owner img" src="../src/images/featured-house/person-3.png">
+                            <div class="owner__information">
+                                <p class="owner__name">Ronald Richards</p>
+                                <p class="owner__address">Santa Ana, Illinois</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-wrapper">
+                            <img alt="house image" src="../src/images/featured-house/house-4.png">
+                            <div class="tag popular">
+                                <svg fill="none" height="16" viewBox="0 0 16 16" width="16"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.0328 7.33118C12.7295 6.64846 12.2885 6.03568 11.7375 5.53118L11.2828 5.114C11.2674 5.10022 11.2488 5.09044 11.2287 5.08552C11.2086 5.0806 11.1876 5.0807 11.1675 5.08579C11.1475 5.09088 11.129 5.10081 11.1137 5.11472C11.0984 5.12863 11.0867 5.14609 11.0797 5.16556L10.8766 5.74837C10.75 6.114 10.5172 6.48743 10.1875 6.85462C10.1656 6.87806 10.1406 6.88431 10.1234 6.88587C10.1063 6.88743 10.0797 6.88431 10.0562 6.86243C10.0344 6.84368 10.0234 6.81556 10.025 6.78743C10.0828 5.84681 9.80156 4.78587 9.18594 3.63118C8.67656 2.67181 7.96875 1.92337 7.08437 1.4015L6.43906 1.02181C6.35469 0.971808 6.24688 1.03743 6.25156 1.13587L6.28594 1.88587C6.30937 2.39837 6.25 2.8515 6.10938 3.22806C5.9375 3.689 5.69062 4.11712 5.375 4.5015C5.15535 4.76863 4.90639 5.01024 4.63281 5.22181C3.97391 5.72832 3.43815 6.37733 3.06562 7.12025C2.69402 7.86964 2.50045 8.69471 2.5 9.53118C2.5 10.2687 2.64531 10.9827 2.93281 11.6562C3.21042 12.3046 3.61103 12.893 4.1125 13.389C4.61875 13.889 5.20625 14.2827 5.86094 14.5562C6.53906 14.8406 7.25781 14.9843 8 14.9843C8.74219 14.9843 9.46094 14.8406 10.1391 14.5577C10.7921 14.2859 11.386 13.8895 11.8875 13.3906C12.3938 12.8906 12.7906 12.3062 13.0672 11.6577C13.3543 10.9861 13.5015 10.2631 13.5 9.53274C13.5 8.77024 13.3438 8.02962 13.0328 7.33118Z"
+                                          fill="#EF4444"/>
+                                </svg>
+                                <p class="tag__text">Popular</p>
+                            </div>
+                        </div>
+                        <h3 class="title">Cosmo's House</h3>
+                        <div class="price">$ 22.000.000</div>
+                        <div class="owner">
+                            <img alt="owner img" src="../src/images/featured-house/person-4.png">
+                            <div class="owner__information">
+                                <p class="owner__name">Jenny Wilson</p>
+                                <p class="owner__address">Preston Rd. Inglewood, Maine 98380</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-house__slider-navigation">
+                    <svg class="swiper-button-prev" fill="none" height="28"
+                         viewBox="0 0 28 28" width="28" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.6589 5.83552C11.3886 5.83499 11.1266 5.92971 10.9185 6.10326C10.8014 6.20098 10.7045 6.321 10.6336 6.45644C10.5626 6.59188 10.5189 6.74007 10.5049 6.89254C10.4909 7.04501 10.507 7.19875 10.5521 7.34496C10.5973 7.49118 10.6707 7.62699 10.7681 7.74462L15.9509 13.9841L10.9532 20.2353C10.8571 20.3543 10.7854 20.4913 10.7421 20.6384C10.6988 20.7855 10.6848 20.9397 10.7009 21.0922C10.717 21.2448 10.7629 21.3926 10.836 21.5272C10.9091 21.6618 11.0079 21.7806 11.1267 21.8766C11.2464 21.9826 11.3866 22.0625 11.5385 22.1114C11.6903 22.1603 11.8506 22.177 12.0092 22.1607C12.1678 22.1443 12.3213 22.0951 12.4601 22.0161C12.5989 21.9372 12.72 21.8303 12.8158 21.702L18.4035 14.7175C18.5736 14.5092 18.6667 14.2479 18.6667 13.9783C18.6667 13.7087 18.5736 13.4474 18.4035 13.2391L12.6191 6.25459C12.5031 6.11371 12.3556 6.00235 12.1888 5.92954C12.022 5.85673 11.8404 5.82452 11.6589 5.83552Z"
+                              fill="white"/>
+                    </svg>
+                    <svg class="swiper-button-next" fill="none" height="28"
+                         viewBox="0 0 28 28" width="28" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.6589 5.83552C11.3886 5.83499 11.1266 5.92971 10.9185 6.10326C10.8014 6.20098 10.7045 6.321 10.6336 6.45644C10.5626 6.59188 10.5189 6.74007 10.5049 6.89254C10.4909 7.04501 10.507 7.19875 10.5521 7.34496C10.5973 7.49118 10.6707 7.62699 10.7681 7.74462L15.9509 13.9841L10.9532 20.2353C10.8571 20.3543 10.7854 20.4913 10.7421 20.6384C10.6988 20.7855 10.6848 20.9397 10.7009 21.0922C10.717 21.2448 10.7629 21.3926 10.836 21.5272C10.9091 21.6618 11.0079 21.7806 11.1267 21.8766C11.2464 21.9826 11.3866 22.0625 11.5385 22.1114C11.6903 22.1603 11.8506 22.177 12.0092 22.1607C12.1678 22.1443 12.3213 22.0951 12.4601 22.0161C12.5989 21.9372 12.72 21.8303 12.8158 21.702L18.4035 14.7175C18.5736 14.5092 18.6667 14.2479 18.6667 13.9783C18.6667 13.7087 18.5736 13.4474 18.4035 13.2391L12.6191 6.25459C12.5031 6.11371 12.3556 6.00235 12.1888 5.92954C12.022 5.85673 11.8404 5.82452 11.6589 5.83552Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--    <div class="swiper mySwiper">-->
+<!--        <div class="swiper-wrapper">-->
+<!--            <div class="swiper-slide">-->
+<!--                <img src="https://swiperjs.com/demos/images/nature-1.jpg"/>-->
+<!--            </div>-->
+<!--            <div class="swiper-slide">-->
+<!--                <img src="https://swiperjs.com/demos/images/nature-2.jpg"/>-->
+<!--            </div>-->
+<!--            <div class="swiper-slide">-->
+<!--                <img src="https://swiperjs.com/demos/images/nature-3.jpg"/>-->
+<!--            </div>-->
+<!--            <div class="swiper-slide">-->
+<!--                <img src="https://swiperjs.com/demos/images/nature-4.jpg"/>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="swiper-button-next"></div>-->
+<!--        <div class="swiper-button-prev"></div>-->
+<!--        <div class="swiper-pagination"></div>-->
+<!--    </div>-->
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script crossorigin="anonymous" defer
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script crossorigin="anonymous"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
 </body>
 </html>

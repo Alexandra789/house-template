@@ -13,7 +13,17 @@ body {
   line-height: 18px;
   letter-spacing: 0;
   text-align: left;
-  color: yellow;
+  color: $yellow;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__line {
+    margin-right: 8px;
+    width: 32px;
+    height: 1px;
+    background: #F59E0B;
+  }
 }
 
 .form {
@@ -44,4 +54,10 @@ a {
 
 img {
   image-rendering: -webkit-optimize-contrast;
+}
+
+svg {
+  .fill {
+    transition: 2s;
+  }
 }
