@@ -151,12 +151,22 @@
                         Apartment
                     </div>
                 </div>
+                <div class="featured-house__slider-navigation">
+                    <svg class="featured-house__slider-navigation-button-prev" fill="none" height="28"
+                         viewBox="0 0 28 28" width="28" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.6589 5.83552C11.3886 5.83499 11.1266 5.92971 10.9185 6.10326C10.8014 6.20098 10.7045 6.321 10.6336 6.45644C10.5626 6.59188 10.5189 6.74007 10.5049 6.89254C10.4909 7.04501 10.507 7.19875 10.5521 7.34496C10.5973 7.49118 10.6707 7.62699 10.7681 7.74462L15.9509 13.9841L10.9532 20.2353C10.8571 20.3543 10.7854 20.4913 10.7421 20.6384C10.6988 20.7855 10.6848 20.9397 10.7009 21.0922C10.717 21.2448 10.7629 21.3926 10.836 21.5272C10.9091 21.6618 11.0079 21.7806 11.1267 21.8766C11.2464 21.9826 11.3866 22.0625 11.5385 22.1114C11.6903 22.1603 11.8506 22.177 12.0092 22.1607C12.1678 22.1443 12.3213 22.0951 12.4601 22.0161C12.5989 21.9372 12.72 21.8303 12.8158 21.702L18.4035 14.7175C18.5736 14.5092 18.6667 14.2479 18.6667 13.9783C18.6667 13.7087 18.5736 13.4474 18.4035 13.2391L12.6191 6.25459C12.5031 6.11371 12.3556 6.00235 12.1888 5.92954C12.022 5.85673 11.8404 5.82452 11.6589 5.83552Z"
+                              fill="white"/>
+                    </svg>
+                    <svg class="featured-house__slider-navigation-button-next" fill="none" height="28"
+                         viewBox="0 0 28 28" width="28" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.6589 5.83552C11.3886 5.83499 11.1266 5.92971 10.9185 6.10326C10.8014 6.20098 10.7045 6.321 10.6336 6.45644C10.5626 6.59188 10.5189 6.74007 10.5049 6.89254C10.4909 7.04501 10.507 7.19875 10.5521 7.34496C10.5973 7.49118 10.6707 7.62699 10.7681 7.74462L15.9509 13.9841L10.9532 20.2353C10.8571 20.3543 10.7854 20.4913 10.7421 20.6384C10.6988 20.7855 10.6848 20.9397 10.7009 21.0922C10.717 21.2448 10.7629 21.3926 10.836 21.5272C10.9091 21.6618 11.0079 21.7806 11.1267 21.8766C11.2464 21.9826 11.3866 22.0625 11.5385 22.1114C11.6903 22.1603 11.8506 22.177 12.0092 22.1607C12.1678 22.1443 12.3213 22.0951 12.4601 22.0161C12.5989 21.9372 12.72 21.8303 12.8158 21.702L18.4035 14.7175C18.5736 14.5092 18.6667 14.2479 18.6667 13.9783C18.6667 13.7087 18.5736 13.4474 18.4035 13.2391L12.6191 6.25459C12.5031 6.11371 12.3556 6.00235 12.1888 5.92954C12.022 5.85673 11.8404 5.82452 11.6589 5.83552Z"
+                              fill="white"/>
+                    </svg>
+                </div>
             </div>
-
-
             <div class="swiper featured-house__slider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-filter="Villa">
                         <div class="image-wrapper">
                             <img alt="house image" src="../src/images/featured-house/house-1.png">
                             <div class="tag popular">
@@ -178,7 +188,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-filter="Villa">
                         <div class="image-wrapper">
                             <img alt="house image" src="../src/images/featured-house/house-2.png">
                             <div class="tag new">
@@ -200,7 +210,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-filter="Apartment">
                         <div class="image-wrapper">
                             <img alt="house image" src="../src/images/featured-house/house-3.png">
                             <div class="tag best">
@@ -222,7 +232,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-filter="Apartment">
                         <div class="image-wrapper">
                             <img alt="house image" src="../src/images/featured-house/house-4.png">
                             <div class="tag popular">
@@ -245,50 +255,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="featured-house__slider-navigation">
-                    <svg class="swiper-button-prev" fill="none" height="28"
-                         viewBox="0 0 28 28" width="28" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.6589 5.83552C11.3886 5.83499 11.1266 5.92971 10.9185 6.10326C10.8014 6.20098 10.7045 6.321 10.6336 6.45644C10.5626 6.59188 10.5189 6.74007 10.5049 6.89254C10.4909 7.04501 10.507 7.19875 10.5521 7.34496C10.5973 7.49118 10.6707 7.62699 10.7681 7.74462L15.9509 13.9841L10.9532 20.2353C10.8571 20.3543 10.7854 20.4913 10.7421 20.6384C10.6988 20.7855 10.6848 20.9397 10.7009 21.0922C10.717 21.2448 10.7629 21.3926 10.836 21.5272C10.9091 21.6618 11.0079 21.7806 11.1267 21.8766C11.2464 21.9826 11.3866 22.0625 11.5385 22.1114C11.6903 22.1603 11.8506 22.177 12.0092 22.1607C12.1678 22.1443 12.3213 22.0951 12.4601 22.0161C12.5989 21.9372 12.72 21.8303 12.8158 21.702L18.4035 14.7175C18.5736 14.5092 18.6667 14.2479 18.6667 13.9783C18.6667 13.7087 18.5736 13.4474 18.4035 13.2391L12.6191 6.25459C12.5031 6.11371 12.3556 6.00235 12.1888 5.92954C12.022 5.85673 11.8404 5.82452 11.6589 5.83552Z"
-                              fill="white"/>
-                    </svg>
-                    <svg class="swiper-button-next" fill="none" height="28"
-                         viewBox="0 0 28 28" width="28" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.6589 5.83552C11.3886 5.83499 11.1266 5.92971 10.9185 6.10326C10.8014 6.20098 10.7045 6.321 10.6336 6.45644C10.5626 6.59188 10.5189 6.74007 10.5049 6.89254C10.4909 7.04501 10.507 7.19875 10.5521 7.34496C10.5973 7.49118 10.6707 7.62699 10.7681 7.74462L15.9509 13.9841L10.9532 20.2353C10.8571 20.3543 10.7854 20.4913 10.7421 20.6384C10.6988 20.7855 10.6848 20.9397 10.7009 21.0922C10.717 21.2448 10.7629 21.3926 10.836 21.5272C10.9091 21.6618 11.0079 21.7806 11.1267 21.8766C11.2464 21.9826 11.3866 22.0625 11.5385 22.1114C11.6903 22.1603 11.8506 22.177 12.0092 22.1607C12.1678 22.1443 12.3213 22.0951 12.4601 22.0161C12.5989 21.9372 12.72 21.8303 12.8158 21.702L18.4035 14.7175C18.5736 14.5092 18.6667 14.2479 18.6667 13.9783C18.6667 13.7087 18.5736 13.4474 18.4035 13.2391L12.6191 6.25459C12.5031 6.11371 12.3556 6.00235 12.1888 5.92954C12.022 5.85673 11.8404 5.82452 11.6589 5.83552Z"
-                              fill="white"/>
-                    </svg>
-                </div>
             </div>
         </div>
     </div>
-
-<!--    <div class="swiper mySwiper">-->
-<!--        <div class="swiper-wrapper">-->
-<!--            <div class="swiper-slide">-->
-<!--                <img src="https://swiperjs.com/demos/images/nature-1.jpg"/>-->
-<!--            </div>-->
-<!--            <div class="swiper-slide">-->
-<!--                <img src="https://swiperjs.com/demos/images/nature-2.jpg"/>-->
-<!--            </div>-->
-<!--            <div class="swiper-slide">-->
-<!--                <img src="https://swiperjs.com/demos/images/nature-3.jpg"/>-->
-<!--            </div>-->
-<!--            <div class="swiper-slide">-->
-<!--                <img src="https://swiperjs.com/demos/images/nature-4.jpg"/>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="swiper-button-next"></div>-->
-<!--        <div class="swiper-button-prev"></div>-->
-<!--        <div class="swiper-pagination"></div>-->
-<!--    </div>-->
-
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script crossorigin="anonymous" defer
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script crossorigin="anonymous"
-                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-                src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
 </body>
 </html>

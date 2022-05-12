@@ -1,7 +1,4 @@
 .featured-house {
-  &__title {
-
-  }
 
   &__filters {
     display: flex;
@@ -52,13 +49,7 @@
 
     &-button-prev {
       margin-right: 16px;
-
-      svg {
-        transform: scale(-1, -1);
-      }
-    }
-
-    &-button-next {
+      transform: scale(-1, -1);
     }
 
     &-button-next, &-button-prev {
@@ -70,7 +61,16 @@
       overflow: hidden;
       cursor: pointer;
 
-      &:hover {
+      &.swiper-button-disabled {
+        background-color: $neutral300;
+        cursor: default;
+
+        path {
+          fill: $neutral700;
+        }
+      }
+
+      &:not(.swiper-button-disabled):hover {
         background-color: $greenBackground;
 
         svg {
@@ -84,6 +84,7 @@
 
   &__slider {
     margin-left: 40px;
+    padding-bottom: 120px;
     position: absolute;
 
     .swiper-wrapper {
@@ -208,6 +209,10 @@
           max-height: 40px;
         }
       }
+    }
+
+    .non-swiper-slide {
+      display: none;
     }
   }
 
