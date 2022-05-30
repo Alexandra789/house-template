@@ -1,0 +1,298 @@
+.ready-to-sell {
+  &__title {
+    margin-top: 12px;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    max-width: 413px;
+    margin-bottom: 16px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content-left {
+    padding-left: 40px;
+    max-width: 524px;
+  }
+
+  .house-details {
+    &__title {
+      margin-bottom: 16px;
+    }
+
+    &__table {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 440px;
+      position: relative;
+
+      &:after {
+        content: '';
+        width: 100%;
+        background-color: $neutral100;
+        height: 2px;
+        margin-top: 16px;
+      }
+
+      &__item {
+        display: flex;
+        align-items: center;
+        max-width: 193.5px;
+        width: 100%;
+        margin-bottom: 16px;
+
+        svg {
+          margin-right: 16px;
+          width: 32px;
+          height: 32px;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 20px;
+          color: $neutral700;
+          max-width: 145.5px;
+          width: 100%;
+        }
+      }
+    }
+
+    .contact-person {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 32px;
+
+      &__information {
+        display: flex;
+        align-items: center;
+        max-width: 220px;
+        width: 100%;
+        margin-right: 56px;
+
+        &-text {
+          max-width: 140px;
+          width: 100%;
+          margin-left: 24px;
+        }
+      }
+
+      &__img {
+        max-width: 56px;
+        max-height: 56px;
+      }
+
+      &__name {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        color: $neutral900
+      }
+
+      &__position {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: $neutral500;
+      }
+
+      &__button {
+        svg {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+
+  &__content-right {
+    max-width: 528px;
+    width: 100%;
+    position: relative;
+
+    .video-card {
+      max-width: 488px;
+      max-height: 416px;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        overflow: hidden;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+      }
+
+      .video-play-button {
+        svg {
+          position: relative;
+          z-index: 3;
+          border-radius: 4px;
+          top: 10px;
+          left: 18px
+        }
+      }
+
+      .video-play-button {
+        position: absolute;
+        z-index: 2;
+        box-sizing: content-box;
+        display: block;
+        width: 48px;
+        height: 48px;
+        top: 45%;
+        left: 48%;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(5px);
+
+        &:before {
+          content: "";
+          position: absolute;
+          z-index: 0;
+          inset: 0;
+          margin: auto;
+          display: block;
+          width: 48px;
+          height: 48px;
+          background: linear-gradient(45deg, $neutral300 15%, $neutral300 70%);
+          border-radius: 50%;
+          -webkit-animation: pulse-border 1500ms ease-out infinite;
+          animation: pulse-border 1500ms ease-out infinite;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          z-index: 1;
+          inset: 0;
+          width: 48px;
+          height: 48px;
+          background: linear-gradient(45deg, rgba(255, 255, 255, 0.5) 100%, rgba(255, 255, 255, 0.5) 0%);
+          border-radius: 50%;
+          transition: all 200ms;
+          box-shadow: 0 2px 7px #131b49;
+        }
+
+        &:hover:after {
+          background-color: $neutral500;
+        }
+      }
+
+      @-webkit-keyframes pulse-border {
+        0% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          opacity: 1;
+        }
+        100% {
+          -webkit-transform: scale(1.75);
+          transform: scale(1.75);
+          opacity: 0;
+        }
+      }
+      @keyframes pulse-border {
+        0% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          opacity: 1;
+        }
+
+        100% {
+          -webkit-transform: scale(1.75);
+          transform: scale(1.75);
+          opacity: 0;
+        }
+      }
+    }
+
+    .video-overlay {
+      position: fixed;
+      z-index: -1;
+      inset: 0;
+      background: $neutral100;
+      display: none;
+      opacity: 0;
+      transition: all ease 500ms;
+
+      &.open {
+        position: fixed;
+        z-index: 1000;
+        background: rgba(240, 243, 253, 0.9);
+        opacity: 1;
+        display: block;
+      }
+    }
+
+    .video-overlay-close {
+      position: absolute;
+      z-index: 1000;
+      top: 15px;
+      right: 20px;
+      font-size: 42px;
+      line-height: 1;
+      font-weight: 400;
+      color: $neutral500;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 200ms;
+
+      &:hover {
+        color: $neutral700;
+      }
+    }
+
+    .video-overlay {
+      iframe {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        width: 50%;
+        border-radius: 4px;
+        height: 50%;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+      }
+    }
+
+    .video-wrapper {
+      float: right;
+      position: relative;
+      z-index: 4;
+    }
+
+    .video-wrapper.open {
+      z-index: 6;
+    }
+
+    .img-wrapper {
+      display: flex;
+      position: relative;
+      top: 70%;
+      z-index: 5;
+      align-items: end;
+      padding-bottom: 66px;
+
+      img {
+        border-radius: 4px;
+        width: 96px;
+        height: 80px;
+        margin-right: 8px;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        &:first-of-type {
+          width: 296px;
+          height: 168px;
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,10 @@
 .featured-house {
+  height: 662px;
+  margin-bottom: 120px;
+
+  &__title {
+    max-width: 260px;
+  }
 
   &__filters {
     display: flex;
@@ -11,6 +17,8 @@
       display: flex;
       align-items: center;
       margin-right: 32px;
+      max-width: 200px;
+      transition: 0.2s;
 
       &:hover {
         background-color: $greenBackground;
@@ -28,6 +36,8 @@
       }
 
       svg {
+        width: 24px;
+        height: 24px;
         margin-right: 8px;
       }
 
@@ -73,10 +83,8 @@
       &:not(.swiper-button-disabled):hover {
         background-color: $greenBackground;
 
-        svg {
-          path {
-            fill: $greenButton;
-          }
+        path {
+          fill: $greenButton;
         }
       }
     }
@@ -84,7 +92,6 @@
 
   &__slider {
     margin-left: 40px;
-    padding-bottom: 120px;
     position: absolute;
 
     .swiper-wrapper {
@@ -120,6 +127,7 @@
           display: flex;
           align-items: center;
           padding: 8px 16px;
+          max-width: 308px;
           width: fit-content;
           position: absolute;
           bottom: 16px;
@@ -135,6 +143,7 @@
 
             .tag__text {
               color: $redText;
+              max-width: 250px;
             }
 
             svg {

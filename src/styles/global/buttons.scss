@@ -12,4 +12,17 @@
   border-radius: 32px;
   display: flex;
   align-items: center;
+  text-transform: capitalize;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: $greenBackground;
+    color: $greenText;
+
+    svg {
+      path {
+        fill: $greenButton;
+      }
+    }
+  }
 }
