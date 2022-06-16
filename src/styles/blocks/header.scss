@@ -235,7 +235,11 @@
       display: flex;
       width: auto !important;
       align-items: center;
-      cursor: grab;
+      margin-right: 16px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
 
       &:nth-child(3) {
         .img-wrapper {

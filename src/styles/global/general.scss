@@ -54,6 +54,7 @@ a {
 
 img {
   image-rendering: -webkit-optimize-contrast;
+  object-fit: cover;
 }
 
 svg {
@@ -94,4 +95,53 @@ svg {
   position: absolute;
   top: 0;
   right: 160px;
+}
+
+.person {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+
+  &__information {
+    display: flex;
+    align-items: center;
+    max-width: 220px;
+    width: 100%;
+    margin-right: 56px;
+
+    &-text {
+      max-width: 140px;
+      width: 100%;
+      margin-left: 24px;
+    }
+  }
+
+  &__img {
+    max-width: 56px;
+    max-height: 56px;
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: $neutral900
+  }
+
+  &__position {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: $neutral500;
+  }
+
+  .contact-person__button {
+    svg {
+      width: 24px;
+      height: 24px;
+      min-width: min-content;
+      margin-right: 16px;
+    }
+  }
 }

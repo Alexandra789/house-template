@@ -1,6 +1,6 @@
 let swiper = new Swiper(".featured-house__slider", {
-    spaceBetween: 40,
     slidesPerView: "auto",
+    grabCursor: true,
     navigation: {
         nextEl: ".featured-house__slider-navigation-button-next",
         prevEl: ".featured-house__slider-navigation-button-prev",

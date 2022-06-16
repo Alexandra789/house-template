@@ -1,0 +1,135 @@
+.about-us {
+  margin-bottom: 174px;
+  padding-bottom: 174px;
+
+  &__title {
+    margin-bottom: 55px;
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  .marker__line {
+    margin: 0 auto;
+  }
+
+  .marker__about-us {
+    justify-content: center;
+    margin-top: 8px;
+  }
+
+  &__slider {
+    max-width: 1520px;
+
+    img {
+      border-radius: 8px;
+      width: 740px;
+      height: 400px;
+      position: relative;
+    }
+
+    .swiper-wrapper {
+      //left: 75%;
+      transform: translate3d(-410.410px, 0px, 0px);
+    }
+
+    .swiper-slide {
+      max-width: 740px;
+      height: 549px;
+      width: 100% !important;
+      margin-right: 56px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .review {
+      position: absolute;
+      z-index: 2;
+      box-shadow: 0 9px 32px rgba(89, 92, 219, 0.05);
+      border-radius: 16px;
+      padding: 32px;
+      background: $white;
+      max-width: 612px;
+      margin: 0 auto;
+      bottom: 44px;
+      right: 64px;
+
+      &__text {
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      &__title {
+        margin-bottom: 16px;
+      }
+
+      .person {
+        margin-top: 24px;
+        align-items: flex-end;
+
+        &__information {
+          max-width: 450px;
+
+          img {
+            width: 40px;
+            height: 40px;
+            filter: drop-shadow(0px 9px 32px rgba(89, 92, 219, 0.1));
+          }
+
+          &-text {
+            max-width: 386px;
+          }
+        }
+
+        .rating {
+          display: flex;
+
+          svg {
+            width: 28px;
+            height: 28px;
+            margin-right: 16px;
+          }
+
+          &__number {
+            font-size: 20px;
+            font-weight: 600;
+            color: $neutral700;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+
+    &__pagination {
+      bottom: 0;
+      transition: 0.2s;
+      cursor: default;
+
+      .swiper-pagination-bullet {
+        transition: 0.2s;
+        cursor: pointer;
+        background: $neutral300;
+        opacity: 1;
+        margin: 0 16px 0 0 !important;
+
+        &:last-of-type {
+          margin-right: 0 !important;
+        }
+
+        &:hover {
+          background: $neutral700;
+          opacity: 0.5;
+        }
+
+        &-active {
+          background: $neutral700;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

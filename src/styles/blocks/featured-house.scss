@@ -70,6 +70,7 @@
       border-radius: 32px;
       overflow: hidden;
       cursor: pointer;
+      transition: 0.2s;
 
       &.swiper-button-disabled {
         background-color: $neutral300;
@@ -100,7 +101,11 @@
 
     .swiper-slide {
       max-width: 340px;
-      cursor: grab;
+      margin-right: 40px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
 
       .title {
         margin-bottom: 8px;
