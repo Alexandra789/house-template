@@ -1,0 +1,118 @@
+.more-about-selling {
+  margin-bottom: 120px;
+
+  &__title {
+    text-align: center;
+    max-width: 424px;
+    width: 100%;
+    margin: 12px auto 0;
+  }
+
+  &__line {
+    margin: 0 auto;
+  }
+
+  &__marker {
+    justify-content: center;
+    margin-top: 8px;
+  }
+
+  .button {
+    margin: 24px auto 0;
+  }
+
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+    .block {
+      display: flex;
+      margin-bottom: 40px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      &__img {
+        width: 200px;
+        height: 144px;
+        margin-right: 32px;
+        border-radius: 16px;
+      }
+
+      &__title {
+        margin-bottom: 16px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+        color: $headline;
+        text-transform: capitalize;
+      }
+
+      &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $neutral01;
+        margin-bottom: 16px;
+      }
+
+      .wrapper {
+        .author {
+          display: flex;
+          margin-bottom: 12px;
+          align-items: center;
+
+          &__name {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: $neutral700;
+          }
+
+          &__img {
+            width: 32px;
+            height: 32px;
+            margin-right: 16px;
+          }
+        }
+
+        .date {
+          display: flex;
+
+          svg {
+            margin-right: 12px;
+          }
+
+          &__time {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: $neutral500;
+          }
+        }
+      }
+    }
+
+    &__left {
+      max-width: 572px;
+      width: 100%;
+      margin-right: 68px;
+    }
+
+    &__right {
+      max-width: 560px;
+      width: 100%;
+      margin-top: 2px;
+
+      &__main-img {
+        width: 560px;
+        height: 280px;
+        margin-bottom: 24px;
+        border-radius: 16px;
+      }
+    }
+  }
+}
