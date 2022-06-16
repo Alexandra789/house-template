@@ -1,0 +1,130 @@
+.subscribe {
+  padding-bottom: 120px;
+  margin-bottom: 120px;
+
+  &__background-img {
+    height: 312px;
+    width: 1200px;
+    border-radius: 32px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  img:not(.subscribe__background-img) {
+    position: absolute;
+    z-index: 4;
+  }
+
+  .container-img {
+    position: relative;
+
+    img {
+      width: 36px;
+      height: 36px;
+      border-radius: 24px;
+    }
+
+    .person-img {
+      border: 2px solid $white;
+      border-radius: 16px;
+      filter: drop-shadow(0px 9px 32px rgba(89, 92, 219, 0.1));
+    }
+
+    img:nth-child(1) {
+      width: 81px;
+      height: 81px;
+      left: 44px;
+      top: 38px;
+    }
+
+    img:nth-child(2) {
+      top: 71px;
+      left: 204px;
+    }
+
+    img:nth-child(4) {
+      left: 67px;
+      top: 173px;
+    }
+
+    img:nth-child(6) {
+      right: 82px;
+      top: 107px;
+    }
+
+    img:nth-child(8) {
+      right: 200px;
+      top: 143px;
+    }
+
+    img:nth-child(3) {
+      width: 54px;
+      height: 54px;
+      top: 178px;
+      left: 195px;
+    }
+
+    img:nth-child(5) {
+      width: 70px;
+      height: 70px;
+      right: 200px;
+      top: 44px;
+    }
+
+    img:nth-child(7) {
+      width: 55px;
+      height: 55px;
+      right: 73px;
+      top: 198px;
+    }
+  }
+
+  &-form {
+    position: relative;
+    z-index: 5;
+    padding: 65px 44px;
+    min-height: 312px;
+
+    &__title {
+      max-width: 424px;
+      width: 100%;
+      text-align: center;
+      margin: 0 auto 32px;
+    }
+
+    &__input-wrapper {
+      position: relative;
+      width: 496px;
+      height: 54px;
+      margin: 0 auto;
+
+      svg {
+        z-index: 3;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 24px;
+        top: 15px;
+      }
+
+      input {
+        width: 100%;
+        padding: 16px 149px 16px 64px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        text-align: left;
+        color: $neutral500;
+        border: none;
+        box-shadow: 0 9px 32px rgba(89, 92, 219, 0.05);
+        border-radius: 32px;
+      }
+    }
+
+    &__button {
+      position: absolute;
+      top: 4px;
+      right: 4px;
+    }
+  }
+}
