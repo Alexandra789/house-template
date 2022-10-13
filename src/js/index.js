@@ -4,3 +4,4 @@ import './featuredHouseSlider';
 import './headerMenuDropDown';
 import './readyToSellVideo';
 import './aboutUsSlider';
+import './notification';

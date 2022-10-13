@@ -55,3 +55,13 @@ h5 {
   color: $neutral01;
   opacity: 0.75;
 }
+
+p.error {
+  color: $redText;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+input.error {
+  border: 1px solid $redText !important;
+}

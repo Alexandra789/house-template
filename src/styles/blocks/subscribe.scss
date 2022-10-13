@@ -2,11 +2,16 @@
   padding-bottom: 120px;
   margin-bottom: 120px;
 
-  &__background-img {
-    height: 312px;
-    width: 1200px;
+  .container {
     border-radius: 32px;
-    position: absolute;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__background-img {
+    max-width: 1200px;
+    border-radius: 32px;
+    position: relative;
     z-index: 1;
   }
 
@@ -16,8 +21,6 @@
   }
 
   .container-img {
-    position: relative;
-
     img {
       width: 36px;
       height: 36px;
@@ -80,7 +83,9 @@
   }
 
   &-form {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 25%;
     z-index: 5;
     padding: 65px 44px;
     min-height: 312px;
@@ -104,7 +109,7 @@
         width: 24px;
         height: 24px;
         left: 24px;
-        top: 15px;
+        top: 16px;
       }
 
       input {
@@ -115,7 +120,7 @@
         line-height: 22px;
         text-align: left;
         color: $neutral500;
-        border: none;
+        border: 1px solid white;
         box-shadow: 0 9px 32px rgba(89, 92, 219, 0.05);
         border-radius: 32px;
       }
@@ -125,6 +130,58 @@
       position: absolute;
       top: 4px;
       right: 4px;
+    }
+  }
+
+  .notification {
+    position: fixed;
+    background-color: $notificationBackground;
+    bottom: 2em;
+    right: 1em;
+    border-radius: 32px;
+    width: 380px;
+    z-index: 100;
+    text-align: left;
+    transition: 1s ease;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(1em, 50px);
+
+    &__background-img{
+      position: fixed;
+      border-radius: 32px;
+      width: 360px;
+      z-index: 0 !important;
+    }
+
+    &.open {
+      opacity: 1;
+      transform: translate(0, 0);
+      visibility: visible;
+    }
+
+    .notification-wrapper {
+      display: flex;
+      color: #fff;
+      padding: 30px 15px 30px 15px;
+      transition: box-shadow 0.3s ease;
+      background: transparent;
+      border-radius: 1em / 1em;
+      overflow: hidden;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+
+      .notification__text {
+        margin-left: 10px;
+        font-size: 18px;
+        font-weight: 300;
+      }
     }
   }
 }
