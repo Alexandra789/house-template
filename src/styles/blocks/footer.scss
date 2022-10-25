@@ -1,0 +1,118 @@
+.footer {
+  padding-bottom: 120px;
+  position: relative;
+
+  .container{
+    position: relative;
+  }
+
+  .linear-gradient__yellow {
+    background: #B9FF82;
+    filter: blur(110px);
+    right: 0;
+    position: absolute;
+    transform: rotate(110deg);
+    width: 438px;
+    height: 130px;
+    left: 62%;
+    top: 28px;
+  }
+
+  .linear-gradient__blue {
+    position: absolute;
+    width: 438px;
+    height: 140px;
+    background: #82BBFF;
+    right: -18%;
+    filter: blur(110px);
+    transform: rotate(90deg);
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+
+    &__left {
+      max-width: 320px;
+      margin-right: 32px;
+
+      .logo {
+        display: flex;
+        margin-bottom: 16px;
+        align-items: center;
+
+        svg {
+          margin-right: 12px;
+        }
+      }
+
+      .description {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        color: $neutral01;
+        margin-bottom: 24px;
+        opacity: 0.75;
+      }
+
+      .social-icons {
+        a {
+          margin-right: 24px;
+
+          svg {
+            width: 32px;
+            height: 32px;
+          }
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    &__right {
+      display: flex;
+      z-index: 99;
+      position: relative;
+
+      .footer-navigation {
+        margin-right: 87px;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        &__title {
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 23px;
+          margin-bottom: 24px;
+        }
+
+        &__link {
+          opacity: 0.75;
+          color: $neutral01;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 18px;
+          display: block;
+          text-transform: capitalize;
+          margin-bottom: 24px;
+
+          &.email{
+            text-transform: none;
+          }
+
+          &:hover {
+            color: $headline;
+          }
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
