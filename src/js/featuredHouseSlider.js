@@ -26,9 +26,9 @@ $(".featured-house__filters .featured-house__filters__item").on("click", functio
             },
         });
     } else {
-        $(".swiper-slide").not("[data-filter='" + filter + "']").addClass("non-swiper-slide").removeClass("swiper-slide").hide();
+        $(".featured-house__slider .swiper-slide").not("[data-filter='" + filter + "']").addClass("non-swiper-slide").removeClass("swiper-slide").hide();
         $("[data-filter='" + filter + "']").removeClass("non-swiper-slide").addClass("swiper-slide").attr("style", null).show();
-        if ($(".swiper-slide").length > 6)
+        if ($(".featured-house__slider .swiper-slide").length > 6)
             slidesxcol = 3;
         else slidesxcol = 1;
         swiper.destroy();
