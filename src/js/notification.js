@@ -7,7 +7,7 @@ const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@((
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    if(checkValidateEmailInput()) {
+    if (checkValidateEmailInput()) {
         setTimeout(
             () => {
                 notification.classList.add('open');
@@ -30,11 +30,26 @@ function checkValidateEmailInput() {
         emailInputForm.classList.add('error');
         errorMessageForm.textContent = 'Field is filled incorrectly';
         return false;
-    }
-    else {
-        emailInputForm.value = '';
-        emailInputForm.classList.remove('error');
-        errorMessageForm.textContent = '';
+    } else {
+        removeError();
         return true;
     }
+}
+
+emailInputForm.addEventListener('input', (e) => {
+    if (!e.target.value) {
+       removeError();
+    }
+})
+
+emailInputForm.addEventListener('blur', (e) => {
+    if (!e.target.value) {
+        removeError();
+    }
+})
+
+function removeError(){
+    emailInputForm.value = '';
+    emailInputForm.classList.remove('error');
+    errorMessageForm.textContent = '';
 }
