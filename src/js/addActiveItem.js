@@ -7,7 +7,6 @@ dropdown.addEventListener('click', (e) => {
 let featuredFilters = document.querySelectorAll('.featured-house__filters__item');
 featuredFilters.forEach(filter => {
     filter.addEventListener('click', (e) => {
-        console.log(e.target);
         let el;
         if (e.target.tagName === 'path') {
             el = e.target.parentNode.parentNode;
@@ -16,7 +15,6 @@ featuredFilters.forEach(filter => {
         } else {
             el = e.target;
         }
-        console.log(el);
         let activeItem = document.querySelector('.featured-house__filters__item-active');
         addActiveItem(activeItem, el, 'featured-house__filters__item', 'featured-house__filters__item-active')
     })
