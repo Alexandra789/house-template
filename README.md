@@ -7,4 +7,4 @@ npm run build
 npm run dev
 
 
-https://gorgeous-crostata-32a1a1.netlify.app/
+https://merry-kashata-5e3c33.netlify.app/
